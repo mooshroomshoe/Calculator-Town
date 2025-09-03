@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +82,7 @@
 
 <div class="calculator-container">
 
-  <!-- 1. Basic Addition -->
+  <!-- 1. Addition -->
   <div class="calculator">
     <h3>Addition Calculator</h3>
     <div class="calc-display" id="addDisplay">0</div>
@@ -92,23 +91,20 @@
       <button onclick="pressAdd('2')">2</button>
       <button onclick="pressAdd('3')">3</button>
       <button onclick="pressAdd('+')">+</button>
-
       <button onclick="pressAdd('4')">4</button>
       <button onclick="pressAdd('5')">5</button>
       <button onclick="pressAdd('6')">6</button>
       <button class="wide-button" onclick="calculateAdd()">=</button>
-
       <button onclick="pressAdd('7')">7</button>
       <button onclick="pressAdd('8')">8</button>
       <button onclick="pressAdd('9')">9</button>
       <button onclick="clearAdd()">C</button>
-
       <button onclick="pressAdd('0')">0</button>
       <button onclick="pressAdd('.')">.</button>
     </div>
   </div>
 
-  <!-- 2. Subtraction Calculator -->
+  <!-- 2. Subtraction -->
   <div class="calculator">
     <h3>Subtraction Calculator</h3>
     <div class="calc-display" id="subDisplay">0</div>
@@ -117,23 +113,20 @@
       <button onclick="pressSub('2')">2</button>
       <button onclick="pressSub('3')">3</button>
       <button onclick="pressSub('-')">-</button>
-
       <button onclick="pressSub('4')">4</button>
       <button onclick="pressSub('5')">5</button>
       <button onclick="pressSub('6')">6</button>
       <button class="wide-button" onclick="calculateSub()">=</button>
-
       <button onclick="pressSub('7')">7</button>
       <button onclick="pressSub('8')">8</button>
       <button onclick="pressSub('9')">9</button>
       <button onclick="clearSub()">C</button>
-
       <button onclick="pressSub('0')">0</button>
       <button onclick="pressSub('.')">.</button>
     </div>
   </div>
 
-  <!-- 3. Multiplication Calculator -->
+  <!-- 3. Multiplication -->
   <div class="calculator">
     <h3>Multiplication Calculator</h3>
     <div class="calc-display" id="mulDisplay">0</div>
@@ -142,23 +135,20 @@
       <button onclick="pressMul('2')">2</button>
       <button onclick="pressMul('3')">3</button>
       <button onclick="pressMul('*')">*</button>
-
       <button onclick="pressMul('4')">4</button>
       <button onclick="pressMul('5')">5</button>
       <button onclick="pressMul('6')">6</button>
       <button class="wide-button" onclick="calculateMul()">=</button>
-
       <button onclick="pressMul('7')">7</button>
       <button onclick="pressMul('8')">8</button>
       <button onclick="pressMul('9')">9</button>
       <button onclick="clearMul()">C</button>
-
       <button onclick="pressMul('0')">0</button>
       <button onclick="pressMul('.')">.</button>
     </div>
   </div>
 
-  <!-- 4. Division Calculator -->
+  <!-- 4. Division -->
   <div class="calculator">
     <h3>Division Calculator</h3>
     <div class="calc-display" id="divDisplay">0</div>
@@ -167,23 +157,20 @@
       <button onclick="pressDiv('2')">2</button>
       <button onclick="pressDiv('3')">3</button>
       <button onclick="pressDiv('/')">/</button>
-
       <button onclick="pressDiv('4')">4</button>
       <button onclick="pressDiv('5')">5</button>
       <button onclick="pressDiv('6')">6</button>
       <button class="wide-button" onclick="calculateDiv()">=</button>
-
       <button onclick="pressDiv('7')">7</button>
       <button onclick="pressDiv('8')">8</button>
       <button onclick="pressDiv('9')">9</button>
       <button onclick="clearDiv()">C</button>
-
       <button onclick="pressDiv('0')">0</button>
       <button onclick="pressDiv('.')">.</button>
     </div>
   </div>
 
-  <!-- 5. Fraction Calculator -->
+  <!-- 5. Fraction -->
   <div class="calculator">
     <h3>Fraction Calculator</h3>
     <div class="calc-display" id="fracDisplay">0</div>
@@ -192,28 +179,24 @@
       <button onclick="pressFrac('1/3')">1/3</button>
       <button onclick="pressFrac('1/4')">1/4</button>
       <button onclick="pressFrac('+')">+</button>
-
       <button onclick="pressFrac('1/5')">1/5</button>
       <button onclick="pressFrac('1/6')">1/6</button>
       <button onclick="pressFrac('1/8')">1/8</button>
       <button onclick="pressFrac('-')">-</button>
-
       <button onclick="pressFrac('1/1')">1</button>
       <button onclick="pressFrac('2/1')">2</button>
       <button onclick="pressFrac('3/1')">3</button>
       <button onclick="pressFrac('*')">*</button>
-
       <button onclick="pressFrac('4/1')">4</button>
       <button onclick="pressFrac('5/1')">5</button>
       <button onclick="pressFrac('6/1')">6</button>
       <button onclick="pressFrac('/')">/</button>
-
       <button class="wide-button" onclick="calculateFrac()">=</button>
       <button class="wide-button" onclick="clearFrac()">C</button>
     </div>
   </div>
 
-  <!-- 6. Scientific Calculator -->
+  <!-- 6. Scientific -->
   <div class="calculator">
     <h3>Scientific Calculator</h3>
     <div class="calc-display" id="sciDisplay">0</div>
@@ -222,103 +205,5 @@
       <button onclick="pressSci('8')">8</button>
       <button onclick="pressSci('9')">9</button>
       <button onclick="pressSci('/')">/</button>
+      <button onclick="pressSci('4')">
 
-      <button onclick="pressSci('4')">4</button>
-      <button onclick="pressSci('5')">5</button>
-      <button onclick="pressSci('6')">6</button>
-      <button onclick="pressSci('*')">*</button>
-
-      <button onclick="pressSci('1')">1</button>
-      <button onclick="pressSci('2')">2</button>
-      <button onclick="pressSci('3')">3</button>
-      <button onclick="pressSci('-')">-</button>
-
-      <button onclick="pressSci('0')">0</button>
-      <button onclick="pressSci('.')">.</button>
-      <button onclick="calculateSci()">=</button>
-      <button onclick="pressSci('+')">+</button>
-
-      <button onclick="pressSci('Math.sin(')">sin</button>
-      <button onclick="pressSci('Math.cos(')">cos</button>
-      <button onclick="pressSci('Math.tan(')">tan</button>
-      <button onclick="pressSci('Math.sqrt(')">√</button>
-
-      <button class="wide-button" onclick="clearSci()">C</button>
-    </div>
-  </div>
-
-  <!-- 7. Tax Calculator -->
-  <div class="calculator">
-    <h3>Tax Calculator</h3>
-    <div class="calc-display" id="taxDisplay">0</div>
-    <div class="calc-buttons">
-      <button onclick="pressTax('10000')">10000</button>
-      <button onclick="pressTax('20000')">20000</button>
-      <button onclick="pressTax('30000')">30000</button>
-      <button onclick="calculateTax()">=</button>
-      <button class="wide-button" onclick="clearTax()">C</button>
-    </div>
-  </div>
-
-  <!-- 8. Insurance Calculator -->
-  <div class="calculator">
-    <h3>Insurance Calculator</h3>
-    <div class="calc-display" id="insDisplay">0</div>
-    <div class="calc-buttons">
-      <button onclick="pressIns('100')">100</button>
-      <button onclick="pressIns('200')">200</button>
-      <button onclick="pressIns('300')">300</button>
-      <button onclick="calculateIns()">=</button>
-      <button class="wide-button" onclick="clearIns()">C</button>
-    </div>
-  </div>
-
-</div>
-
-<script>
-  // Simple safe calculators using Function()
-  function createCalc() {
-    let input = '';
-    return {
-      press: val => input += val,
-      calculate: () => {
-        try { return Function('"use strict";return (' + input + ')')(); }
-        catch { return 'Error'; }
-      },
-      clear: () => { input = ''; return 0; },
-      getInput: () => input
-    };
-  }
-
-  // Addition
-  let add = createCalc();
-  const addDisplay = document.getElementById('addDisplay');
-  function pressAdd(val){ add.press(val); addDisplay.textContent = add.getInput(); }
-  function calculateAdd(){ addDisplay.textContent = add.calculate(); }
-  function clearAdd(){ addDisplay.textContent = add.clear(); }
-
-  // Subtraction
-  let sub = createCalc();
-  const subDisplay = document.getElementById('subDisplay');
-  function pressSub(val){ sub.press(val); subDisplay.textContent = sub.getInput(); }
-  function calculateSub(){ subDisplay.textContent = sub.calculate(); }
-  function clearSub(){ subDisplay.textContent = sub.clear(); }
-
-  // Multiplication
-  let mul = createCalc();
-  const mulDisplay = document.getElementById('mulDisplay');
-  function pressMul(val){ mul.press(val); mulDisplay.textContent = mul.getInput(); }
-  function calculateMul(){ mulDisplay.textContent = mul.calculate(); }
-  function clearMul(){ mulDisplay.textContent = mul.clear(); }
-
-  // Division
-  let div = createCalc();
-  const divDisplay = document.getElementById('divDisplay');
-  function pressDiv(val){ div.press(val); divDisplay.textContent = div.getInput(); }
-  function calculateDiv(){ divDisplay.textContent = div.calculate(); }
-  function clearDiv(){ divDisplay.textContent = div.clear(); }
-
-  // Fraction
-  let frac = createCalc();
-  const fracDisplay = document.getElementById('fracDisplay');
-  function pressFrac(val
