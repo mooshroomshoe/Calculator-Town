@@ -1,71 +1,188 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculator Town</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Calculators & Producers</title>
   <style>
-    body { font-family: Arial, sans-serif; background:#f4f4f4; margin:0; }
-    header, footer { background:#2c3e50; color:#fff; padding:15px; text-align:center; }
-    nav a { margin:0 10px; color:#fff; text-decoration:none; font-weight:bold; }
-    .container { max-width:900px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,.1); }
-    .calculator { margin-bottom:30px; padding:15px; border:1px solid #ccc; border-radius:6px; }
-    label, input, button { display:block; margin:6px 0; }
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #fff176; /* happy yellow */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffeb3b;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #f57f17;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .calculator, .producer {
+      background-color: #fff9c4;
+      border-radius: 15px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .calculator:hover, .producer:hover {
+      transform: scale(1.05);
+    }
+    .calculator img, .producer img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .calculator button, .producer button {
+      padding: 10px 15px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #fbc02d;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .calculator button:hover, .producer button:hover {
+      background-color: #f9a825;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ffeb3b;
+      font-weight: bold;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Calculator Town</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="producers.html">Producers</a>
-    </nav>
+    <h1>Fun Calculators & Producers</h1>
   </header>
 
-  <div class="container">
-    <h2>Welcome to Calculator Town</h2>
-    <p>Lots of useful calculators for everyday needs.</p>
-
-    <!-- Tip Calculator -->
+  <section class="container">
+    <!-- Calculators -->
     <div class="calculator">
-      <h3>Tip Calculator</h3>
-      <label for="bill">Bill Amount ($):</label>
-      <input type="number" id="bill">
-      <label for="tip">Tip Percentage (%):</label>
-      <input type="number" id="tip">
-      <button onclick="calcTip()">Calculate</button>
-      <p id="tipResult"></p>
+      <img src="https://i.imgur.com/2g7YbHh.png" alt="Addition">
+      <h3>Addition</h3>
+      <button onclick="alert('Opening Addition Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/6e3VbCk.png" alt="Subtraction">
+      <h3>Subtraction</h3>
+      <button onclick="alert('Opening Subtraction Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/rlq2FKn.png" alt="Multiplication">
+      <h3>Multiplication</h3>
+      <button onclick="alert('Opening Multiplication Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/TvK3JxV.png" alt="Division">
+      <h3>Division</h3>
+      <button onclick="alert('Opening Division Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/TrYcZyX.png" alt="Fraction">
+      <h3>Fractions</h3>
+      <button onclick="alert('Opening Fraction Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/wlZ3Kq0.png" alt="Percentage">
+      <h3>Percentage</h3>
+      <button onclick="alert('Opening Percentage Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/7e3YdZm.png" alt="Geometry">
+      <h3>Geometry</h3>
+      <button onclick="alert('Opening Geometry Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/hXQsLqO.png" alt="Algebra">
+      <h3>Algebra</h3>
+      <button onclick="alert('Opening Algebra Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/A7XZ5Zq.png" alt="Time">
+      <h3>Time</h3>
+      <button onclick="alert('Opening Time Calculator!')">Open</button>
+    </div>
+    <div class="calculator">
+      <img src="https://i.imgur.com/ErPbg8f.png" alt="Money">
+      <h3>Money</h3>
+      <button onclick="alert('Opening Money Calculator!')">Open</button>
     </div>
 
-    <!-- BMI Calculator -->
-    <div class="calculator">
-      <h3>BMI Calculator</h3>
-      <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight">
-      <label for="height">Height (m):</label>
-      <input type="number" id="height">
-      <button onclick="calcBMI()">Calculate</button>
-      <p id="bmiResult"></p>
+    <!-- Producers -->
+    <div class="producer">
+      <img src="https://i.imgur.com/1sQzYDx.png" alt="Producer 1">
+      <h3>Producer 1</h3>
+      <button onclick="alert('Opening Producer 1!')">Open</button>
     </div>
-
-    <!-- GPA Calculator -->
-    <div class="calculator">
-      <h3>GPA Calculator (Simple)</h3>
-      <label for="grades">Enter Grades (comma separated, 0–4 scale):</label>
-      <input type="text" id="grades">
-      <button onclick="calcGPA()">Calculate</button>
-      <p id="gpaResult"></p>
+    <div class="producer">
+      <img src="https://i.imgur.com/Xv6l0fW.png" alt="Producer 2">
+      <h3>Producer 2</h3>
+      <button onclick="alert('Opening Producer 2!')">Open</button>
     </div>
-  </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/yC4KxYk.png" alt="Producer 3">
+      <h3>Producer 3</h3>
+      <button onclick="alert('Opening Producer 3!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/WYc7z8k.png" alt="Producer 4">
+      <h3>Producer 4</h3>
+      <button onclick="alert('Opening Producer 4!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/0Z2W6fh.png" alt="Producer 5">
+      <h3>Producer 5</h3>
+      <button onclick="alert('Opening Producer 5!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/o9V4P5b.png" alt="Producer 6">
+      <h3>Producer 6</h3>
+      <button onclick="alert('Opening Producer 6!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/Pl3VzUj.png" alt="Producer 7">
+      <h3>Producer 7</h3>
+      <button onclick="alert('Opening Producer 7!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/9kLBtQh.png" alt="Producer 8">
+      <h3>Producer 8</h3>
+      <button onclick="alert('Opening Producer 8!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/E7R9vWU.png" alt="Producer 9">
+      <h3>Producer 9</h3>
+      <button onclick="alert('Opening Producer 9!')">Open</button>
+    </div>
+    <div class="producer">
+      <img src="https://i.imgur.com/mWx6P7T.png" alt="Producer 10">
+      <h3>Producer 10</h3>
+      <button onclick="alert('Opening Producer 10!')">Open</button>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Calculator Town</p>
+    Made with 💛 for Kids!
   </footer>
-
-  <script>
-    function calcTip(){const b=parseFloat(bill.value),t=parseFloat(tip.value);if(isNaN(b)||isNaN(t))return;tipResult.textContent=`Tip Amount: $${(b*(t/100)).toFixed(2)}`}
-    function calcBMI(){const w=parseFloat(weight.value),h=parseFloat(height.value);if(isNaN(w)||isNaN(h)||h<=0)return;bmiResult.textContent=`Your BMI: ${(w/(h*h)).toFixed(2)}`}
-    function calcGPA(){const arr=grades.value.split(',').map(x=>parseFloat(x.trim())).filter(x=>!isNaN(x));if(!arr.length)return;gpaResult.textContent=`Average GPA: ${(arr.reduce((a,b)=>a+b,0)/arr.length).toFixed(2)}`}
-  </script>
 </body>
 </html>
