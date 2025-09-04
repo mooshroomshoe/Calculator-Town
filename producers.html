@@ -4,12 +4,49 @@
 <meta charset="UTF-8">
 <title>Calculator Town - Producers</title>
 <style>
-  body { font-family: Arial, sans-serif; background: #fff; margin: 20px; color: #222; }
-  h1 { text-align: center; font-size: 48px; margin-bottom: 0; }
-  h3 { text-align: center; font-size: 18px; color: #666; margin-top: 5px; margin-bottom: 30px; }
-  #producers { width: 400px; margin: 0 auto; display: flex; flex-direction: column; }
-  .producer { display: flex; justify-content: space-between; margin: 5px 0; padding: 8px 12px; border: 1px solid #ccc; border-radius: 5px; background: #f9f9f9; }
-  .producer button { padding: 5px 10px; cursor: pointer; font-size: 14px; }
+  /* Same font as homepage */
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+  body { 
+    font-family: 'Comic Neue', Arial, sans-serif; 
+    background: #FFEB3B; /* happy yellow like homepage */ 
+    margin: 20px; 
+    color: #FF9800; /* orange text */
+  }
+
+  h1 { text-align: center; font-size: 48px; margin-bottom: 0; color: #FF9800; }
+  h3 { text-align: center; font-size: 18px; margin-top: 5px; margin-bottom: 30px; color: #FF9800; }
+  
+  #producers { 
+    width: 400px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+  }
+
+  .producer { 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 5px 0; 
+    padding: 8px 12px; 
+    border: 1px solid #FF9800; 
+    border-radius: 5px; 
+    background: #FFF176; /* slightly lighter yellow for buttons */ 
+  }
+
+  .producer button { 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    background: #FF9800; 
+    color: #fff; 
+    border: none; 
+    border-radius: 3px; 
+  }
+
+  .producer button:hover { 
+    background: #F57C00; 
+  }
 </style>
 </head>
 <body>
@@ -88,4 +125,3 @@
 
 </body>
 </html>
-
